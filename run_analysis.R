@@ -12,8 +12,8 @@ DT_ActNames[,2] <- as.character(DT_ActNames[,2])
 ##Narrow down filter Col names for mean/std
 FAC_MSD <- grep(".*mean.*|.*std.*", DT_Features[,2])
 FAC_Names <- DT_Features[FAC_MSD,2] 
-FAC_Names = gsub('-mean', 'Mean', FAC_Names) 
-FAC_Names = gsub('-std', 'Std', FAC_Names) 
+FAC_Names <- gsub('-mean', 'Mean', FAC_Names) 
+FAC_Names <- gsub('-std', 'Std', FAC_Names) 
 FAC_Names <- gsub('[-()]', '', FAC_Names) 
 
 ##Load All Samsung Train Data
